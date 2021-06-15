@@ -40,17 +40,17 @@ It correctly bundles React in production mode and optimizes the build for the be
 ### `BasicComponents`
 Contains the reusable basic-components (e.g. Loader, progress, card) that can be used across the app. The basic components are single components that can be used in combination to achieve some UX. e.g progress-bar, loader, buttons, input etc...
 Each component directory has its own
-    - index
-    - style
-    - mobile-style if mobile optimisation is needed
+- index
+- style
+- mobile-style if mobile optimisation is needed
 
 
 ### `Components(Widgets)`
 Contains the reusable components built by combination of basic-components. The components are loosely coupled entities and doesn't manage any state of their own. They just use the state of the app passed to demonstrate their behaviour.
 Each component directory has its own
-    - index
-    - style
-    - mobile-style if mobile optimisation is needed
+- index
+- style
+- mobile-style if mobile optimisation is needed
 
 
 
@@ -58,12 +58,12 @@ Each component directory has its own
 Contains the pages that are loaded with different URL. A Page is logical combination of Components(Widgets) and BasicComponents managed with app state (react-state/redux/mobx) as per the state-management used.
 It has its own reducer to mange the state of the page.
 Each Page directory has its own
-    - index
-    - style
-    - mobile-style if mobile optimisation is needed
-    - actionCreators
-    - actionDispatchers
-    - reducers
+- index
+- style
+- mobile-style if mobile optimisation is needed
+- actionCreators
+- actionDispatchers
+- reducers
 Kept it this way as it makes easy to navigate to the file and debug.
 
 
