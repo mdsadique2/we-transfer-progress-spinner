@@ -34,8 +34,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 - I have used a boiler-plate of my own
 - i18n support added, need improvement though
 - Radial progress component was created to show progress
-
-
+- For internationalization, i18next plugin has been used
 
 
 ## Code details in `SRC` directory
@@ -91,6 +90,10 @@ Contains various files used commonly across the app
 
 ### `App.js`
     - Contains the App header and content area where different pages are rendered.
+
+
+### `i18n.js`
+    - Configuration for i18n settings as per i18next library.
 
 
 ### `index.js`
