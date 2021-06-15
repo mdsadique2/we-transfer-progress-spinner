@@ -24,8 +24,13 @@ const FileUploadProgressWidget = (props) => {
         if (currentProgressPercent !== currentProgressPercentState) {
             setCurrentProgressPercentState(currentProgressPercent);
         }
-        let conversion = utils.converMilliSecondsToMinutes(timeLeft);
-        setTimeLeftState(conversion);
+
+        if (timeLeft !== timeLeftState) {
+            let conversion = utils.converMilliSecondsToMinutes(timeLeft);
+            setTimeLeftState(conversion);
+        }
+
+        
     }
 
     const startButtonMethod = () => {
@@ -42,7 +47,7 @@ const FileUploadProgressWidget = (props) => {
         return !(props.stopSpinner === true)
     }
 
-    useEffect(updateValues,[currentProgressPercent])
+    useEffect(updateValues,[currentProgressPercent, timeLeft])
 
     return (
         <Card className="flex flex-jc-center flex-dir-column spinner-demo-card">
@@ -59,7 +64,7 @@ const FileUploadProgressWidget = (props) => {
                 
                 <div className="message-content">
                     <Trans i18nKey="demoPage.sendingText" values={{totalFilesCount, totalRecipientsCount}}>
-                        Sending <a>totalFilesCount files to totalRecipientsCount recipients.</a>
+                        Sending <a href="#">totalFilesCount files to totalRecipientsCount recipients.</a>
                     </Trans>
                     <br/>
                    
