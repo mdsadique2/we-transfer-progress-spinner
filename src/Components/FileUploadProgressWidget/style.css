@@ -1,0 +1,44 @@
+.spinner-demo-card {
+    width: 300px;
+}
+
+.spinner-demo-card  .spinner-row {
+    padding: var(--spacing-large) var(--spacing-xx-large) var(--spacing-medium);
+}
+
+.spinner-demo-card  .message-row {
+    padding: var(--spacing-small) var(--spacing-large) var(--spacing-medium);
+    text-align: center;
+}
+
+.spinner-demo-card  .message-header {
+    font-size: var(--font-x-large);
+}
+
+.spinner-demo-card  .message-content{
+    line-height: 1.75;
+    margin-top: var(--spacing-small)
+}
+
+.spinner-demo-card  .message-content .time-left {
+    color: var(--color-grey);
+}
+
+
+.spinner-demo-card  .button-action-row {
+    padding: var(--spacing-medium) var(--spacing-xx-large);
+    border-top: 1px solid var(--color-grey);
+}
+
+
+.spinner-demo-card .button-action-row.completed button {
+    display: none;
+}
+
+.spinner-demo-card .button-action-row.in-progress .finished-block {
+    display: none;
+}
+
+.spinner-demo-card .button-action-row .finished-block {
+    font-size: var(--font-xx-large);
+}

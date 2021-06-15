@@ -1,0 +1,6 @@
+/* mobile phone */
+@media all and (max-width: 1024px) {
+    .spinner-demo-card {
+        width: 100%
+    }
+}

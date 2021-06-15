@@ -1,0 +1,6 @@
+/* mobile phone */
+@media all and (max-width: 768px) {
+    .card {
+        padding: var(--spacing-medium);
+    }
+}

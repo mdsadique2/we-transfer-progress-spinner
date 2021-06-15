@@ -1,0 +1,27 @@
+.demo-page {
+    display: flex;
+    justify-content: center;
+}
+
+.demo-page .widgets-container-row {
+    width: 90%;
+    justify-content: space-around;
+    margin-top: var(--spacing-x-large);
+}
+
+.demo-page .column{
+    width: 300px;
+}
+
+.demo-page .column ul {
+    min-height: 120px;
+    font-size: var(--font-large);
+}
+
+.demo-page .column li {
+    margin-bottom: var(--spacing-large);
+}
+
+.demo-page .loader-container {
+    padding: var(--spacing-xx-large);
+}

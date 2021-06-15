@@ -1,0 +1,27 @@
+{
+  "labels": {
+    "transferring": "Transferring",
+    "start": "Start",
+    "cancel": "Cancel",
+    "mb": "MB",
+    "bg": "GB",
+    "done": "Done!"
+  },
+  "demoPage": {
+    "sendingText": "Sending <1>{{totalFilesCount}} files to {{totalRecipientsCount}} recipients</1>",
+    "uploadedCountText": "{{fileUploadProgressSize}} of {{totalFileSize}} uploaded",
+    "timeLeft": "{{timeLeftState}} remaining",
+    "filesTransferred": "{{totalFilesUploaded}} files transferred",
+    "usingReactState": "Using React state to show progress",
+    "progressWillSpin": "Progress bar will spin",
+    "usingReduxState": "Using redux state to show progress",
+    "progressWillNotSpin": "Progress bar will not spin",
+    "progressBarToLoader": "Progress-bar loader was changed to a loader component",
+    "progressBarToLoaderApiUse": "Can be used as loading spinner during API calls"
+  },
+  "404Page": {
+    "404": "404",
+    "notFound": "Page not found",
+    "goToHome": "Go to home page"
+  }
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="35" failures="0" errors="0" time="5.239">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-06-15T11:42:08" time="1.751" tests="3">
+    <testcase classname=" should set initial state" name=" should set initial state" time="0.002">
+    </testcase>
+    <testcase classname=" should re-set initial state on cancel action" name=" should re-set initial state on cancel action" time="0.001">
+    </testcase>
+    <testcase classname=" should update next state on start action" name=" should update next state on start action" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-06-15T11:42:08" time="1.73" tests="16">
+    <testcase classname=" should return falsy if number is not invalid" name=" should return falsy if number is not invalid" time="0.008">
+    </testcase>
+    <testcase classname=" should return false if string cannot be changed to an invalid number" name=" should return false if string cannot be changed to an invalid number" time="0">
+    </testcase>
+    <testcase classname=" should return false if string can be changed to an invalid number" name=" should return false if string can be changed to an invalid number" time="0.001">
+    </testcase>
+    <testcase classname=" should return convert values in milliseconds to valid minutes and seconds string" name=" should return convert values in milliseconds to valid minutes and seconds string" time="0">
+    </testcase>
+    <testcase classname=" should return only seconds value if it is less than a minute" name=" should return only seconds value if it is less than a minute" time="0">
+    </testcase>
+    <testcase classname=" should return only milliseconds value if it is less 1000 seconds" name=" should return only milliseconds value if it is less 1000 seconds" time="0.001">
+    </testcase>
+    <testcase classname=" should return &quot;1 minute&quot; as output" name=" should return &quot;1 minute&quot; as output" time="0">
+    </testcase>
+    <testcase classname=" should return empty string for invalid milliseconds value" name=" should return empty string for invalid milliseconds value" time="0">
+    </testcase>
+    <testcase classname=" should return empty string for wrong inputs inputs" name=" should return empty string for wrong inputs inputs" time="0">
+    </testcase>
+    <testcase classname=" should return empty string for wrong numerator inputs" name=" should return empty string for wrong numerator inputs" time="0">
+    </testcase>
+    <testcase classname=" should return empty string for wrong dinominator inputs" name=" should return empty string for wrong dinominator inputs" time="0">
+    </testcase>
+    <testcase classname=" should return correct output for correct inputs" name=" should return correct output for correct inputs" time="0.001">
+    </testcase>
+    <testcase classname=" should return correct converted string for numeric MB value" name=" should return correct converted string for numeric MB value" time="0">
+    </testcase>
+    <testcase classname=" should return correct converted MB string for numeric MB value less than 1000" name=" should return correct converted MB string for numeric MB value less than 1000" time="0.001">
+    </testcase>
+    <testcase classname=" should return empty string for incorrect MB input" name=" should return empty string for incorrect MB input" time="0">
+    </testcase>
+    <testcase classname=" should return &quot;1.0 GB&quot; as output" name=" should return &quot;1.0 GB&quot; as output" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-06-15T11:42:08" time="1.737" tests="3">
+    <testcase classname=" should dispatch the start action" name=" should dispatch the start action" time="0.001">
+    </testcase>
+    <testcase classname=" should dispatch the cancel action" name=" should dispatch the cancel action" time="0">
+    </testcase>
+    <testcase classname=" should dispatch the initialize action" name=" should dispatch the initialize action" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-06-15T11:42:10" time="0.434" tests="3">
+    <testcase classname=" should return the start action" name=" should return the start action" time="0.001">
+    </testcase>
+    <testcase classname=" should return the initialize action" name=" should return the initialize action" time="0.001">
+    </testcase>
+    <testcase classname=" should return the cancel action" name=" should return the cancel action" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-06-15T11:42:10" time="0.614" tests="1">
+    <testcase classname=" renders Card component without crashing" name=" renders Card component without crashing" time="0.025">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-06-15T11:42:10" time="0.616" tests="1">
+    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.038">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-06-15T11:42:08" time="2.767" tests="4">
+    <testcase classname=" renders RadialProgress component without crashing" name=" renders RadialProgress component without crashing" time="0.015">
+    </testcase>
+    <testcase classname=" should validate percent and display exact value if less than 100" name=" should validate percent and display exact value if less than 100" time="0.05">
+    </testcase>
+    <testcase classname=" should validate percent before using and never exceed 100" name=" should validate percent before using and never exceed 100" time="0.006">
+    </testcase>
+    <testcase classname=" should not spin the progress bar" name=" should not spin the progress bar" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-06-15T11:42:08" time="2.873" tests="2">
+    <testcase classname=" should render the component" name=" should render the component" time="0.087">
+    </testcase>
+    <testcase classname=" should update changes when start button is clicked" name=" should update changes when start button is clicked" time="0.03">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-06-15T11:42:08" time="2.849" tests="1">
+    <testcase classname=" renders Demo page component without crashing" name=" renders Demo page component without crashing" time="0.062">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-06-15T11:42:08" time="2.929" tests="1">
+    <testcase classname=" renders Demo page component without crashing" name=" renders Demo page component without crashing" time="0.092">
+    </testcase>
+  </testsuite>
+</testsuites>

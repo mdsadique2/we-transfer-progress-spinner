@@ -1,0 +1,28 @@
+/* mobile phone */
+@media all and (max-width: 1024px) {
+    
+    .demo-page .widgets-container-row {
+        align-items: center;
+        flex-direction: column;
+        margin-top: var(--spacing-large);
+        padding-top: var(--spacing-large);
+    }
+    
+    .demo-page .column{
+        width: 100%;
+        margin-bottom: var(--spacing-xx-large);
+    }
+    
+    .demo-page .column ul {
+        min-height: auto;
+        margin-bottom: var(--spacing-large);
+    }
+    
+    .demo-page .column li {
+        margin-bottom: var(--spacing-small);
+    }
+    
+    .demo-page .loader-container {
+        padding: var(--spacing-xx-large);
+    }
+}

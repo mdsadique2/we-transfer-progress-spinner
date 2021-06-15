@@ -1,0 +1,64 @@
+.radial-progress-container {
+    position: relative;
+}
+
+.radial-progress-container svg {
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    background-color: var(--color-light-grey);
+    will-change: transform;
+}
+
+.radial-progress-container svg.spin {
+    animation: rotateSpinner 2000ms linear infinite;
+    animation-delay: 0.125s;
+}
+  
+.radial-progress-container circle.progress-bar {
+    stroke: var(--color-primary);
+    transition: all 0.25s ease;
+}
+
+.radial-progress-container circle.gutter {
+    stroke: var(--color-light-grey);
+}
+
+.radial-progress-container .progress-text-container {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+}
+
+
+.radial-progress-container .text-wrapper {
+    font-size: var(--font-xxx-large);
+    padding-left: var(--spacing-medium);
+}
+
+.radial-progress-container .value {
+}
+
+.radial-progress-container .symbol {
+    color: var(--color-grey);
+    display: inline-block;
+    font-size: medium;
+    font-weight: 500;
+    padding-top: 9px;
+    padding-left: 5px;
+    vertical-align: text-top;
+}
+
+@keyframes rotateSpinner {
+    from {
+        transform: rotate(-90deg);
+    }
+
+    to {
+        transform: rotate(270deg);
+    }
+}

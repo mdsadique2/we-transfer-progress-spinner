@@ -1,0 +1,194 @@
+:root {
+    --base-rem-size: 1rem;
+
+    --font-small: 8px;
+    --font-medium: 12px;
+    --font-large: 16px;
+    --font-x-large: 24px;
+    --font-xx-large: 32px;
+    --font-xxx-large: 48px;
+
+    --font-regular: 14px;
+
+    --all-transtion: all 0.25s ease;
+
+    --color-white: #fff;
+    --color-primary: #409fff;
+    --color-primary-hover: #0273e5;
+    --color-primary-active: #015fbd;
+
+
+    --color-transparent: rgba(0,0,0,0);
+
+    --color-light-grey: #e5e5e5;
+    --color-grey: #bbbcbf;
+    --color-app-background: #4a4a4e;
+    --color-border-grey: #cacbe0;
+
+
+    --color-text-primary: #17181a;
+
+
+    --spacing-x-small: calc(var(--base-rem-size) * 0.25);
+    --spacing-small:   calc(var(--base-rem-size) * 0.5);
+    --spacing-medium:  calc(var(--base-rem-size) * 1);
+    --spacing-large:   calc(var(--base-rem-size) * 1.5);
+    --spacing-x-large: calc(var(--base-rem-size) * 2);
+    --spacing-xx-large: calc(var(--base-rem-size) * 3);
+
+    --box-shadow: 0 0 12px 0 rgb(0 0 0 / 10%), 0 10px 30px 0 rgb(0 0 0 / 20%);
+    --box-shadow-hover: 0 8px 4px -5px rgb(0 0 0 / 15%);
+
+    --border-radius: 12px;
+    --border-radius-small: 10px;
+
+    --font-family-headers: 'Roboto Slab', serif;
+    --font-family-body-text: 'Rubik', sans-serif;
+
+
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: var(--color-text-primary);
+    margin: 0;
+    font-family: var(--font-family-body-text);
+    font-size: var(--font-regular);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-family-headers);
+}
+
+div {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--color-primary);
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--all-transtion);
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+}
+
+
+button {
+    border: 1px solid var(--color-primary);
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-primary);
+
+    color: var(--color-white);
+    cursor: pointer;
+
+    display: inline-block;
+    outline: none;
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-family: var(--font-family-body-text);
+    font-size: var(--font-large);
+    letter-spacing: 1px;
+    min-width: 150px;
+    position: relative;
+    z-index: 1;
+    transition: var(--all-transtion);
+    overflow: hidden;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: var(--all-transtion);
+    background-color: var(--color-primary-hover);
+    opacity: 0;
+}
+
+button:active::after {
+    background-color: var(--color-primary-active);
+}
+
+button:hover::after {
+    opacity: 1;
+}
+
+
+button.capsule {
+    border-radius: 40px;
+}
+
+button.button-secondary {
+    color: var(--color-primary);
+    background: var(--color-transparent);
+    transition: var(--all-transtion);
+}
+
+button.button-secondary:hover {
+    border-color: 1px solid var(--color-primary-hover);
+    color: var(--color-primary-hover);
+}
+
+button.button-secondary:active {
+    border-color: 1px solid var(--color-primary-active);
+    color: var(--color-primary-active);
+}
+
+button.button-secondary::after {
+    content: '';
+    background: var(--color-transparent);
+    opacity: 0;
+}
+
+
+button.button-disabled {
+    color: var(--color-grey) !important;
+    background: var(--color-dark-grey) !important;
+    border: 1px solid var(--color-dark-grey) !important;
+    transition: var(--all-transtion) !important;
+    pointer-events: none !important;
+}
+
+button.button-secondary.button-disabled {
+    color: var(--color-dark-grey) !important;
+    background: var(--color-transparent) !important;
+    border: 1px solid var(--color-dark-grey) !important;
+    transition: var(--all-transtion) !important;
+    pointer-events: none !important;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-jc-center {
+    justify-content: center;
+}
+
+.flex-ai-center {
+    align-items: center;
+}
+
+.flex-dir-column {
+    flex-direction: column;
+}
+
+.text-left {
+    text-align: left;
+}
