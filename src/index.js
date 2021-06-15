@@ -5,6 +5,7 @@ import reducer from 'Store/reducer'
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import RouterComp  from './Router';
+import FallbackLoading  from 'Components/FallbackLoading';
 
 import './i18n';
 
@@ -16,7 +17,7 @@ const store = createStore(reducer);
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Suspense fallback="Loading">
+    <Suspense fallback={<FallbackLoading/>}>
       <Provider store={store}><RouterComp /></Provider>
     </Suspense>
   </React.StrictMode>,

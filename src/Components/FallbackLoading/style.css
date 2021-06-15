@@ -1,0 +1,9 @@
+.fallback-container {
+    align-items: center;
+    color: var(--color-primary);
+    font-size: var(--font-x-large);
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
