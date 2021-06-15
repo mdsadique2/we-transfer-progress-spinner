@@ -28,9 +28,13 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 
 ## Other details
+- The intention while development was to make is modular as possible
+- keeping a good 'Separation of concerns'
+- Breaking in multiple re-usable layers with loosely coupled data for easier management.
 - I have used a boiler-plate of my own
 - i18n support added, need improvement though
 - Radial progress component was created to show progress
+
 
 
 
@@ -56,7 +60,6 @@ Each component directory has its own
 
 ### `Pages`
 Contains the pages that are loaded with different URL. A Page is logical combination of Components(Widgets) and BasicComponents managed with app state (react-state/redux/mobx) as per the state-management used.
-It has its own reducer to mange the state of the page.
 Each Page directory has its own
 - index
 - style
